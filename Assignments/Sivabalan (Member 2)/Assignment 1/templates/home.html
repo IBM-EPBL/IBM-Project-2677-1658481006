@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Plasma Donors
+        </title>
+        <style>
+            input{
+                border-radius: 30px;
+                border:30px;
+                border: 10px;
+                padding-left: 8px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-right: 8px;
+                font-size: larger;
+                font-family: cursive;
+                text-align: center;
+                vertical-align:middle;
+            }
+
+            body{
+                background-color: rgb(156, 247, 95);
+                padding-top: 5%;
+                align-items: center;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>PLASMA DONOR APPLICATION</h1>
+        <form method="post" action={{ url_for('fun')}} >
+            <input type="text" placeholder="Name.." name="uname"><br><br>
+            <input type="email" placeholder="Mail id.." name="umail"><br><br>
+            <input type="text" placeholder="phone Number.." name="uphn"><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>
