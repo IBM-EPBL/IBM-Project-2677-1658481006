@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "cb7720be-031f-4117-a70f-eb9893a547a4", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "555443a6-fe3a-4c47-b77f-86cd464fd9e9", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </head>
+  <body>
+    <center>
+        <h1> WELCOME!!</h1><Br>
+    <button><a href="/rqst">REQUEST</a></button><br><br>
+    <button><a href="/apply">APPLY</a></button><br><br>
+    <button><a href="/logout">LOGOUT</a></button>
+    </center>
+  </body>
+</html>
+
+<style type="text/css">
+  body
+  {
+    background: linear-gradient(white,white,rgb(156, 244, 238),rgb(60, 255, 242),rgb(25, 255, 240));
+    font-family:cursive;
+    height: 600px;
+    color: rgb(79, 202, 207);
+  }
+  h1
+  {
+    padding-top: 5%;
+  }
+
+  button{
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 254, 254);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+</style>
+
+
+
