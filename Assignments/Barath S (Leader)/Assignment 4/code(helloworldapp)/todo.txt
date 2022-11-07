@@ -1,0 +1,5 @@
+download python
+install python
+install flask - pip install flask ||
+flask,numpy,colorama,tqdm
+run app-pyhton <filename.py>
